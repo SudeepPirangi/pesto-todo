@@ -1,0 +1,33 @@
+{
+  "name": "pesto-node-backend",
+  "version": "1.0.0",
+  "description": "A TODO app backend built on Node.js. This provides all the CRUD endpoints with data saved in MongoDB cloud database.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudeepPirangi/pesto-todo.git"
+  },
+  "keywords": [
+    "React.js",
+    "Node.js",
+    "MongoDB",
+    "todo-app"
+  ],
+  "author": "Sudeep Pirangi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SudeepPirangi/pesto-todo/issues"
+  },
+  "homepage": "https://github.com/SudeepPirangi/pesto-todo#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
