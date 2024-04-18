@@ -1,12 +1,12 @@
 const express = require("express");
 
+const { todoRoutes } = require("./routes");
+
 const PORT = process.env.PORT || 9999;
 const app = express();
 
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}, url : http://localhost:${PORT}`);
-});
+app.use(todoRoutes);
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}, url: http://localhost:${PORT}`);
 });
