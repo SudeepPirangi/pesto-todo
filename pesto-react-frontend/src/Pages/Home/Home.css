@@ -1,0 +1,27 @@
+.home > h1 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1248px) {
+  .home {
+    margin-top: 70px !important;
+  }
+}
+
+.filter-key {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 1em !important;
+  font-weight: bold !important;
+}
+
+.interactions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.error-alert {
+  margin-top: 15px;
+  border: 1px solid #f44336;
+}

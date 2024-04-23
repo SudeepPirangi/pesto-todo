@@ -1,0 +1,29 @@
+.task {
+  border: 1px solid lightgray;
+  margin-bottom: 15px;
+  box-shadow: 2px 3px 8px 2px rgba(0,0,0,0.2) !important;
+}
+
+.card-content {
+  padding-bottom: 10px !important;
+}
+
+.titleAndDelete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shrink-button {
+  min-width: max-content !important;
+}
+
+.description {
+  margin: 10px 0;
+}
+
+.slider {
+  padding: 10px 15px 0;
+}
+

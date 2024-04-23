@@ -42,8 +42,7 @@ const getTodo = async (req, res) => {
 };
 
 const createTodo = async (req, res) => {
-  const { title, description, status = "todo", deadline } = req.body;
-
+  const { title, description, status = "to-do", deadline } = req.body;
   if (!title || !title.length) {
     return res.status(400).json({
       message: "Title is required",

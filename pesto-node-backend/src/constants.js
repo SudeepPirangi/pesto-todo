@@ -1,3 +1,3 @@
 module.exports = {
-  TODO_STATUSES: ["todo", "in-progress", "done"],
+  TODO_STATUSES: ["to-do", "in-progress", "done"],
 };
