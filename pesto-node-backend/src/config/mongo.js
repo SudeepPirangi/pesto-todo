@@ -20,6 +20,7 @@ const connectDatabase = async () => {
   }
 };
 
+// Disconnect or close connection with database
 const disconnectDatabase = async () => {
   try {
     await mongoose.disconnect();
@@ -28,6 +29,7 @@ const disconnectDatabase = async () => {
   }
 };
 
+// db connected and disconnected event listeners
 mongoose.connection.on("connected", () =>
   console.log("Connected to Mongodb Atlas")
 );

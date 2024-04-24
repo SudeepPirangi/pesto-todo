@@ -4,6 +4,7 @@ const { todo } = require("../controllers");
 
 const todoRoutes = express.Router();
 
+// configures all the routes with their respective controllers
 todoRoutes.get("/", todo.welcome);
 todoRoutes.get("/todos", todo.getAllTodos);
 todoRoutes.get("/todos/:id", todo.getTodo);
