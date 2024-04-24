@@ -32,7 +32,7 @@ export const statuses = [
 const Task = ({ task, onEditTask, onDeleteTask }) => {
   const updatedTask = transformStatus(task);
   return (
-    <Card sx={{ minWidth: 275 }} className="task">
+    <Card sx={{ minWidth: 275 }} className="task" role="task">
       <CardContent className="card-content">
         <div className="titleAndDelete">
           <Typography variant="h5" component="div">

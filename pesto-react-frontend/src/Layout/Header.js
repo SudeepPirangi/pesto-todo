@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 
 const Header = () => {
   return (
-    <AppBar>
+    <AppBar role="header">
       <Toolbar>
         <Typography variant="h6" component="div">
           TODO App

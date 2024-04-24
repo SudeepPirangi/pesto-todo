@@ -9,7 +9,6 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.8",
     "lodash": "^4.17.21",
@@ -22,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!my-library-dir)/'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^15.0.4",
+    "jest": "^27.5.1",
+    "react-test-renderer": "^18.2.0"
   }
 }

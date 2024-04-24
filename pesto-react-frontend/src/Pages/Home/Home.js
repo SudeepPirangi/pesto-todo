@@ -103,7 +103,7 @@ export default function Home(props) {
 
   return (
     <Grid item xs={12} sm={10} md={6} className="home">
-      <h1>
+      <h1 data-test-id="filter-title">
         List of
         <Typography className="filter-key" color={statusColor(filter)}>
           {` ${getFilterLabel(filter)} `}
@@ -143,7 +143,7 @@ export default function Home(props) {
         </Alert>
       )}
 
-      <Box sx={{ my: 2 }}>
+      <Box sx={{ my: 2 }} data-testid="task-list">
         {!!filteredTasks.length ? (
           filteredTasks.map((task) => (
             <Task
@@ -155,7 +155,7 @@ export default function Home(props) {
             />
           ))
         ) : (
-          <h1>No Tasks to display</h1>
+          <h1 data-testid="no-task">No Tasks to display</h1>
         )}
       </Box>
 
