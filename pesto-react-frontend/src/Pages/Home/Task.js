@@ -30,6 +30,7 @@ export const statuses = [
 ];
 
 const Task = ({ task, onEditTask, onDeleteTask }) => {
+  if (!task) return null;
   const updatedTask = transformStatus(task);
   return (
     <Card sx={{ minWidth: 275 }} className="task" role="task">

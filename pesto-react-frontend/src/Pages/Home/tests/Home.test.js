@@ -52,7 +52,7 @@ describe("Home", () => {
     }));
     render(<Home />);
     await screen.findByTestId("task-list");
-    // console.log("tasklist", screen.queryByText("first description").outerHTML);
+
     expect(todos.getAllTodos).toHaveBeenCalled();
     expect(todos.getAllTodos).toHaveBeenCalledTimes(1);
     expect(screen.getByText("first description")).toBeInTheDocument();

@@ -61,7 +61,8 @@ const CreateTask = ({
           autoFocus
           required
           margin="dense"
-          id="new-title"
+          data-testid="new-title"
+          id="title"
           name="title"
           label="Title"
           value={title}
@@ -70,8 +71,9 @@ const CreateTask = ({
           fullWidth
         />
         <TextField
-          id="new-description"
+          data-testid="new-description"
           label="Description"
+          id="description"
           name="description"
           value={description}
           onChange={(ev) => setDescription(ev.target.value)}
@@ -84,7 +86,8 @@ const CreateTask = ({
           <InputLabel id="new-status-label">Status</InputLabel>
           <Select
             labelId="new-status-label"
-            id="new-status"
+            data-testid="new-status"
+            id="status"
             name="status"
             value={status}
             onChange={(ev) => setStatus(ev.target.value)}
@@ -97,8 +100,10 @@ const CreateTask = ({
         </FormControl>
       </DialogContent>
       <DialogActions>
-        <Button onClick={handleDialogClose}>Cancel</Button>
-        <Button type="submit">
+        <Button data-testid="cancel" onClick={handleDialogClose}>
+          Cancel
+        </Button>
+        <Button data-testid="create-task" type="submit">
           {selectedTask ? "Edit Task" : "Create Task"}
         </Button>
       </DialogActions>
